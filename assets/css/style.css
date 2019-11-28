@@ -96,3 +96,24 @@ body{
 .userContactsContainer > a > img {
     height: 20px;
 }
+
+.removeButton{
+    background-color: red;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.removeButton:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+
+.userContactsContainer + .removeButton{
+    margin-top: 20px;
+}
