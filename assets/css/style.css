@@ -1,0 +1,98 @@
+@import "reset.css";
+
+
+
+body{
+    font-family: sans-serif;
+}
+#userList{
+    background-color: #FF8F00;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+.flexContainer{
+    display: flex;
+}
+
+.flexWrap{
+    flex-wrap: wrap;
+}
+
+.userCardWrapper{
+    max-width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+}
+
+.flexDirectionColumn{
+    flex-direction: column;
+}
+
+.alignItemCenter{
+    align-items: center;
+}
+
+.userPictureContainer{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+
+}
+.userPictureContainer > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    transform: translate(-50%, -50%);
+
+}
+
+.userFullName{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.userFullNameMargin{
+    margin-top: 15px;
+}
+
+.userDescription{
+    text-align: center;
+    line-height: 20px;
+    max-height: 40px;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.justifyContentEvenly{
+    justify-content: space-evenly;
+}
+
+.userContactsContainer{
+    margin-top: auto;
+}
+
+.userContactsContainer > a{
+    font-size: 0;
+}
+
+.userContactsContainer > a + a {
+    margin-left: 10px;
+    font-size: 0;
+
+}
+
+.userContactsContainer > a > img {
+    height: 20px;
+}
